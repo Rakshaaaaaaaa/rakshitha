@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            color: #4CAF50;
+            font-size: 20px;
+            border-bottom: 2px solid #4CAF50;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .personal-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .personal-info div {
+            margin-right: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        .skills span {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Your Name</h1>
+        <p><em>Your desired role (e.g., Software Developer / Data Analyst / Designer)</em></p>
+
+        <div class="section personal-info">
+            <div>
+                <strong>Email:</strong> your.email@example.com
+            </div>
+            <div>
+                <strong>Phone:</strong> +91 12345 67890
+            </div>
+            <div>
+                <strong>Location:</strong> Your City, India
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <ul>
+                <li><strong>Bachelor of Technology in Computer Science</strong> - XYZ University (2018 - 2022)</li>
+                <li><strong>Higher Secondary Education</strong> - ABC School (2016 - 2018)</li>
+            </ul>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>Software Developer</strong> - ABC Company (2022 - Present)
+                    <ul>
+                        <li>Developed and maintained web applications using HTML, CSS, JavaScript, and React.</li>
+                        <li>Collaborated with cross-functional teams to deliver software solutions on time.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Intern</strong> - XYZ Corporation (Summer 2021)
+                    <ul>
+                        <li>Worked on backend API development using Node.js and Express.</li>
+                        <li>Participated in software testing and debugging.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Git & GitHub</span>
+                <span>SQL</span>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li><strong>Portfolio Website</strong> – A personal website showcasing my projects and skills.</li>
+                <li><strong>E-commerce Platform</strong> – Developed a fully functional shopping site using React and Node.js.</li>
+            </ul>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="section">
+            <h2 class="section-title">Certifications</h2>
+            <ul>
+                <li>Certified Frontend Developer – XYZ Institute</li>
+                <li>JavaScript Algorithms and Data Structures – freeCodeCamp</li>
+            </ul>
+        </div>
+
+        <!-- Languages Section -->
+        <div class="section">
+            <h2 class="section-title">Languages</h2>
+            <ul>
+                <li>English - Fluent</li>
+                <li>Hindi - Fluent</li>
+                <li>Kannada - Native</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="section">
+            <p style="text-align: center; font-size: 14px; color: #666;">&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>

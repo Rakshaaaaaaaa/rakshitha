@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members - Resumes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .member {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #e9e9e9;
+            border-radius: 5px;
+        }
+        .member h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+        .show-btn {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .show-btn:hover {
+            background-color: #45a049;
+        }
+        .resume {
+            display: none;
+            margin-top: 20px;
+        }
+        .resume h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Meet Our Team</h1>
+
+        <!-- Member 1 -->
+        <div class="member">
+            <h2>John Doe</h2>
+            <button class="show-btn" onclick="toggleResume('resume1')">View Resume</button>
+        </div>
+        <div id="resume1" class="resume">
+            <h2>John Doe - Resume</h2>
+            <ul>
+                <li><strong>Email:</strong> john.doe@example.com</li>
+                <li><strong>Phone:</strong> +91 98765 43210</li>
+                <li><strong>Role:</strong> Software Developer</li>
+                <li><strong>Skills:</strong> HTML, CSS, JavaScript, React</li>
+            </ul>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="member">
+            <h2>Jane Smith</h2>
+            <button class="show-btn" onclick="toggleResume('resume2')">View Resume</button>
+        </div>
+        <div id="resume2" class="resume">
+            <h2>Jane Smith - Resume</h2>
+            <ul>
+                <li><strong>Email:</strong> jane.smith@example.com</li>
+                <li><strong>Phone:</strong> +91 87654 32109</li>
+                <li><strong>Role:</strong> Data Analyst</li>
+                <li><strong>Skills:</strong> SQL, Python, Excel, Power BI</li>
+            </ul>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="member">
+            <h2>Mark Johnson</h2>
+            <button class="show-btn" onclick="toggleResume('resume3')">View Resume</button>
+        </div>
+        <div id="resume3" class="resume">
+            <h2>Mark Johnson - Resume</h2>
+            <ul>
+                <li><strong>Email:</strong> mark.johnson@example.com</li>
+                <li><strong>Phone:</strong> +91 76543 21098</li>
+                <li><strong>Role:</strong> Project Manager</li>
+                <li><strong>Skills:</strong> Agile, Scrum, Project Planning</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleResume(id) {
+            const resume = document.getElementById(id);
+            const isVisible = resume.style.display === 'block';
+
+            // Hide all resumes
+            document.querySelectorAll('.resume').forEach(res => res.style.display = 'none');
+
+            // Show the selected resume if it was hidden
+            if (!isVisible) {
+                resume.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
